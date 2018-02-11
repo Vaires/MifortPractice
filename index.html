@@ -2,21 +2,23 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
-
+<title>
+    Login form
+</title>
 <script type="text/javascript">
     function validate_form() {
         valid = true;
         if (document.contact_form.Login.value == "") {
-            alert("Поле обязательно 'Login' к заполнению!");
+            alert("Поле 'Login' обязательно к заполнению!");
             valid = false;
         }
         if (document.contact_form.EMail.value == "") {
-            alert("Поле обязательно 'Email' к заполнению!");
+            alert("Поле 'Email' обязательно к заполнению!");
             valid = false;
         }
         if (document.contact_form.Password.value != "") {
         } else {
-            alert("Поле обязательно 'Password' к заполнению!");
+            alert("Поле 'Password' обязательно к заполнению!");
             valid = false;
         }
         return valid;
@@ -24,7 +26,7 @@
 </script>
 <body>
 <div class="LoginForm">
-    <form name="contact_form" method="post" action="#" class="rf" onsubmit="return validate_form ( );">
+    <form name="contact_form" method="post" action="createprofile.html" class="rf" onsubmit="return validate_form ( );">
         <div class="FormHeaderTitle">HR APP</div>
 
         <label for="Login">Login:</label>
